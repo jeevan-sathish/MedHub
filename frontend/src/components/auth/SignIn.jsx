@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-
+import { UserContext } from "../context/UserContext";
 const SignIn = () => {
   const navigate =useNavigate()
-
+    const { setUser } = useContext(UserContext);
   const [data ,setData]= useState({
     email: "",
     password: ""
@@ -30,6 +30,7 @@ function handleSubmit(e) {
         alert("Error: " + response.error);
       } else {
         alert("Login successful!");
+        setUser(response.user)
         navigate('/Dashboard')
         console.log("Logged in user:", response.user);
         
