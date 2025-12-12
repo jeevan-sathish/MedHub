@@ -9,6 +9,7 @@ const About = lazy(() => import("./components/pages/About"));
 const Dashboard = lazy(() => import("./components/pages/Dashboard"));
 const SignIn = lazy(() => import("./components/auth/SignIn"));
 const SignUp = lazy(() => import("./components/auth/SignUp"));
+const ExploreCollages = lazy(() => import("./components/pages/ExploreCollages"));
 
 
 const App = () => {
@@ -23,6 +24,7 @@ const App = () => {
           <Route path="/Dashboard" element={<Dashboard />} />
           <Route path="/SignIn" element={<SignIn/>} />
           <Route path="/SignUp" element={<SignUp />} />
+          <Route path="/ExploreCollages" element ={<ExploreCollages/>}/>
         </Routes>
       </Suspense>
 

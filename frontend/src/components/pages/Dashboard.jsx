@@ -1,6 +1,6 @@
 import React, { useContext } from "react";
 import { UserContext } from "../context/UserContext";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Dashboard = () => {
   const { user } = useContext(UserContext);
@@ -91,7 +91,7 @@ const Dashboard = () => {
             Explore Colleges
           </h2>
           <button className="px-6 py-3 bg-green-500 text-white rounded-lg font-semibold hover:bg-green-600 transition">
-            Explore Now
+           <Link to='/ExploreCollages'> Explore Colleges</Link>
           </button>
         </div>
       </div>
@@ -114,7 +114,7 @@ const Dashboard = () => {
       {/* LOGOUT SECTION */}
       <div className="mt-10 flex justify-center gap-6">
         <button className="p-3 rounded-lg bg-green-500 text-white px-6 hover:bg-green-600 transition">
-          Explore Colleges
+         <Link to='/ExploreCollages'> Explore Colleges</Link>
         </button>
 
         <button

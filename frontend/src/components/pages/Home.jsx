@@ -4,11 +4,7 @@ import { Link } from "react-router-dom";
 import { UserContext } from "../context/UserContext";
 import { FaHospitalUser, FaChartLine, FaMapMarkedAlt, FaStar } from "react-icons/fa";
 
-const images = [
-  "https://images.pexels.com/photos/8460158/pexels-photo-8460158.jpeg",
-  "https://images.pexels.com/photos/6129057/pexels-photo-6129057.jpeg",
-  "https://images.pexels.com/photos/4386464/pexels-photo-4386464.jpeg"
-];
+
 
 const Home = () => {
   const { user } = useContext(UserContext);
