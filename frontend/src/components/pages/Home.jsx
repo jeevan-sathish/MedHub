@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const Home = () => {
   return (
-    <div className="w-full min-h-screen flex justify-center items-center bg-white">
+    <div className="w-full min-h-screen flex justify-center items-center bg-blue-200">
       <section className="w-[90%] max-w-7xl py-10 flex flex-col md:flex-row items-center justify-between gap-10">
         
       

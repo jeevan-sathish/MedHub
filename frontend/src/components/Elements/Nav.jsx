@@ -25,7 +25,7 @@ const Nav = () => {
       <div className="hidden md:flex gap-8 font-semibold text-black">
         <Link to="/" className="hover:text-gray-700 transition">Home</Link>
         <Link to="/About" className="hover:text-gray-700 transition">About</Link>
-        <Link to="/Dashboard" className="hover:text-gray-700 transition">Dashboard</Link>
+        
       </div>
 
     
@@ -58,13 +58,7 @@ const Nav = () => {
             About
           </Link>
 
-          <Link
-            to="/Dashboard"
-            className="py-2 border-b border-blue-400 hover:bg-blue-700 rounded"
-            onClick={() => setMenu(false)}
-          >
-            Dashboard
-          </Link>
+          
 
           <div className="py-2">
             <Logout />

@@ -1,13 +1,16 @@
 import React from "react";
 import { Link } from "react-router-dom";
 import { FaGithub } from "react-icons/fa";
+import { FaGitAlt } from "react-icons/fa";
+import { TbBrandGmail } from "react-icons/tb";
+
 
 const Footer = () => {
   return (
     <footer className="w-full bg-blue-800 text-white py-8">
       <div className="max-w-7xl mx-auto w-[90%] grid grid-cols-1 md:grid-cols-3 gap-10">
 
-        {/* GitHub Section */}
+        
         <div className="flex flex-col items-center md:items-start text-center md:text-left space-y-3">
           <div className="flex items-center gap-3">
             <FaGithub className="text-4xl" />
@@ -18,7 +21,7 @@ const Footer = () => {
           </p>
         </div>
 
-        {/* Auth Links Section */}
+       
         <div className="flex flex-col items-center space-y-2 text-lg">
           <Link
             to="/SignUp"
@@ -34,7 +37,7 @@ const Footer = () => {
           </Link>
         </div>
 
-        {/* Contact Section */}
+        
         <div className="text-center md:text-right space-y-2">
           <p>
             <span className="font-semibold">Contact:</span> 8792811280
@@ -44,7 +47,7 @@ const Footer = () => {
             sathishjeevan2004@gmail.com
           </p>
           <p className="hover:text-gray-300 transition cursor-pointer">
-            Visit GitHub
+            Visit GitHub 
           </p>
         </div>
 

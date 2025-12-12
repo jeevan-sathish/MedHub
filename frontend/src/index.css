@@ -1,5 +1,12 @@
 @import "tailwindcss";
 
+@layer components {
+  .inputBox {
+    @apply w-full px-4 py-3 rounded-lg border border-gray-300 focus:border-blue-500 outline-none shadow-sm;
+  }
+}
+
+
 /* :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
