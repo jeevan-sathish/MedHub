@@ -5,7 +5,7 @@ import { TbBrandGmail } from "react-icons/tb";
 
 const Footer = () => {
   return (
-    <footer className="w-full bg-blue-900 text-white py-10 mt-10">
+    <footer className="w-full bg-blue-900 text-white py-10 mt-10 ">
       <div className="max-w-7xl mx-auto w-[90%] grid grid-cols-1 md:grid-cols-3 gap-10">
 
         {/* ---------- LEFT SECTION ---------- */}
