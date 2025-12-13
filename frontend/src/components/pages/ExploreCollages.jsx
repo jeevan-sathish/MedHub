@@ -44,7 +44,7 @@ const ExploreCollages = () => {
     setResponse("");
 
     const genAI = new GoogleGenerativeAI(
-      "AIzaSyA8Yg74j7ICeE0Rdc7i2tqEaL7mRsWZ_HA"
+      "API_KEY"
     );
     const model = genAI.getGenerativeModel({ model: "gemini-2.0-flash" });
 
